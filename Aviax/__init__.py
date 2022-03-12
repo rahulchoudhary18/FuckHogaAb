@@ -229,7 +229,9 @@ else:
     HELP_IMG = Config.HELP_IMG
     START_IMG = Config.START_IMG
     AVIAX_PHOTO = Config.AVIAX_PHOTO
-
+    APP_ID = Config.APP_ID
+    APP_HASH = Config.APP_HASH
+    STRING_SESSION = Config.STRING_SESSION
     try:
         BL_CHATS = {int(x) for x in Config.BL_CHATS or []}
     except ValueError:
