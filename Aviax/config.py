@@ -36,6 +36,7 @@ class Config(object):
     URL = None
     STRICT_GBAN = False
     MONGO_DB_URL = "mongodb+srv://sofia:sofia@cluster0.axmal.mongodb.net/sofia?retryWrites=true&w=majority"
+    REDIS_URL = "
     
 
     # OPTIONAL
