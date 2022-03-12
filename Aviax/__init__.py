@@ -192,7 +192,6 @@ else:
 
     INFOPIC = Config.INFOPIC
     EVENT_LOGS = Config.EVENT_LOGS 
-    ERROR_LOGS = Config.ERROR_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
