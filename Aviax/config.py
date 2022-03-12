@@ -45,7 +45,6 @@ class Config(object):
     BOT_ID = "5060064564"
     BOT_USERNAME = "@AviaxBeatzBot"
     YOUTUBE_API_KEY = "AIzaSyBvAVCNGGDsloQKf_FR_JLtrFp5n9AN3Lw"
-    ALLOW_EXCL = False
     ARQ_API_URL = "https://thearq.tech"
     GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"
     CHROME_DRIVER = "/usr/bin/chromedriver"
@@ -54,6 +53,8 @@ class Config(object):
     MONGO_DB = "Aviax"
     BOT_API_URL = "https://api.telegram.org/bot"
     HELP_IMG = "https://telegra.ph/file/d05a3ce6f08404cd88361.jpg"
+    START_IMG = "https://telegra.ph/file/d05a3ce6f08404cd88361.jpg"
+    AVIAX_PHOTO = "https://telegra.ph/file/d05a3ce6f08404cd88361.jpg"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
