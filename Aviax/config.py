@@ -40,6 +40,7 @@ class Config(object):
     
     SPAMWATCH_SUPPORT_CHAT = "@AviaxSupport"
     SPAMWATCH_API = "xpKDzGXxXksbRFYrQGKH3445Ex0fEMegtptlwXTIMoKXuZ2NpZZt1aLQji8kgeEm"
+    REM_BG_API_KEY = "qtCcZRxigrDt1pZ4E1PQrQnG"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
