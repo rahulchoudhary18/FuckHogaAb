@@ -35,6 +35,8 @@ class Config(object):
     INFOPIC = True
     URL = None
     STRICT_GBAN = False
+    MONGO_DB_URL = "mongodb+srv://sofia:sofia@cluster0.axmal.mongodb.net/sofia?retryWrites=true&w=majority"
+    
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
