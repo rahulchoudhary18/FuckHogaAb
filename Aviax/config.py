@@ -34,6 +34,7 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
+    STRICT_GBAN = False
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
