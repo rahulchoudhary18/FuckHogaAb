@@ -41,6 +41,7 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "@AviaxSupport"
     SPAMWATCH_API = "xpKDzGXxXksbRFYrQGKH3445Ex0fEMegtptlwXTIMoKXuZ2NpZZt1aLQji8kgeEm"
     REM_BG_API_KEY = "qtCcZRxigrDt1pZ4E1PQrQnG"
+    OPENWEATHERMAP_ID = "6b9b233c98ae2a761758fb1e45e9491d"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
