@@ -141,7 +141,7 @@ if ENV:
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", True)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True) # Don't Change
     BOT_NAME = os.environ.get("BOT_NAME", True) # Name Of your Bot.4
-    MONGO_DB = "Cutiepii"
+    MONGO_DB = "Aviax"
     ARQ_API_URL = "https://thearq.tech"
     GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"
     CHROME_DRIVER = "/usr/bin/chromedriver"
@@ -214,12 +214,8 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
-    APP_ID = Config.APP_ID
-    APP_HASH = Config.APP_HASH
     BOT_ID = Config.BOT_ID
     BOT_USERNAME = Config.BOT_USERNAME
-    STRING_SESSION = Config.STRING_SESSION
-    GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
     YOUTUBE_API_KEY = Config.YOUTUBE_API_KEY
     ALLOW_EXCL = Config.ALLOW_EXCL
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
@@ -250,17 +246,17 @@ try:
 
     REDIS.ping()
 
-    LOGGER.info("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • Redis Database")
+    LOGGER.info("[AVIAX]: Connecting To Data Center • Mumbai • Redis Database")
 
 except BaseException:
 
-    raise Exception("[CUTIEPII ERROR]: Your Yūki • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again.")
+    raise Exception("[AVIAX ERROR]: Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again.")
 
 finally:
 
    REDIS.ping()
 
-   LOGGER.info("[CUTIEPII]: Connection To The Yūki • Data Center • Mumbai • Redis Database Established Successfully!")
+   LOGGER.info("[CUTIEPII]:  • Data Center • Mumbai • Redis Database Established Successfully!")
     
 
 if not SPAMWATCH_API:
@@ -271,7 +267,7 @@ else:
         sw = spamwatch.Client(SPAMWATCH_API)
     except:
         sw = None
-        LOGGER.warning("[CUTIEPII ERROR]: Can't connect to SpamWatch!")
+        LOGGER.warning("[AVIAX ERROR]: Can't connect to SpamWatch!")
 
 
 # Credits Logger
@@ -281,7 +277,7 @@ print("[AVIAX] AVIAX Is Starting.")
 print("[AVIAX]: Telegraph Installing")
 telegraph = Telegraph()
 print("[AVIAX]: Telegraph Account Creating")
-telegraph.create_account(short_name='Cutiepii')
+telegraph.create_account(short_name='Aviax')
 updater = tg.Updater(token=TOKEN, base_url=BOT_API_URL, workers=WORKERS, request_kwargs={"read_timeout": 10, "connect_timeout": 10}, use_context=True)           
 print("[AVIAX]: TELETHON CLIENT STARTING")
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
