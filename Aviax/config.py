@@ -36,7 +36,7 @@ class Config(object):
     URL = None
     STRICT_GBAN = False
     MONGO_DB_URL = "mongodb+srv://sofia:sofia@cluster0.axmal.mongodb.net/sofia?retryWrites=true&w=majority"
-    REDIS_URL = "redis-15869.c14.us-east-1-2.ec2.cloud.redislabs.com:15869"
+    REDIS_URL = "redis://AVIAX:145Qjnt2wbsrStZTsrDIfhwkydfarqYZ@redis-18861.c91.us-east-1-3.ec2.cloud.redislabs.com:18861/AVIAX"
     
     SPAMWATCH_SUPPORT_CHAT = "@AviaxSupport"
     SPAMWATCH_API = "xpKDzGXxXksbRFYrQGKH3445Ex0fEMegtptlwXTIMoKXuZ2NpZZt1aLQji8kgeEm"
