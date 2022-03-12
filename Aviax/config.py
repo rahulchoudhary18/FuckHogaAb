@@ -53,6 +53,7 @@ class Config(object):
     DEL_CMDS = False
     MONGO_DB = "Aviax"
     BOT_API_URL = "https://api.telegram.org/bot"
+    HELP_IMG = "https://telegra.ph/file/d05a3ce6f08404cd88361.jpg"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
