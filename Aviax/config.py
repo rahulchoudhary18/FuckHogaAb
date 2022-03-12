@@ -38,6 +38,7 @@ class Config(object):
     MONGO_DB_URL = "mongodb+srv://sofia:sofia@cluster0.axmal.mongodb.net/sofia?retryWrites=true&w=majority"
     REDIS_URL = "redis-15869.c14.us-east-1-2.ec2.cloud.redislabs.com:15869"
     
+    SPAMWATCH_SUPPORT_CHAT = "AviaxSupport"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
