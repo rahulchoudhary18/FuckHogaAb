@@ -25,7 +25,7 @@ class Config(object):
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
         -1001633114368
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    )  # Prints info rmation like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
     DB_URL = "postgres://jdzcyyju:7tHwBXlUlK9UCKAtsgVxA5d9aGUzar9g@arjuna.db.elephantsql.com/jdzcyyju"  # needed for any database modules # its "URI" and not "URL" as heroku and similar ones only accept it as such
@@ -42,6 +42,16 @@ class Config(object):
     SPAMWATCH_API = "xpKDzGXxXksbRFYrQGKH3445Ex0fEMegtptlwXTIMoKXuZ2NpZZt1aLQji8kgeEm"
     REM_BG_API_KEY = "qtCcZRxigrDt1pZ4E1PQrQnG"
     OPENWEATHERMAP_ID = "6b9b233c98ae2a761758fb1e45e9491d"
+    BOT_ID = "5060064564"
+    BOT_USERNAME = "@AviaxBeatzBot"
+    YOUTUBE_API_KEY = "AIzaSyBvAVCNGGDsloQKf_FR_JLtrFp5n9AN3Lw"
+    ALLOW_EXCL = False
+    ARQ_API_URL = "https://thearq.tech"
+    GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"
+    CHROME_DRIVER = "/usr/bin/chromedriver"
+    BOT_NAME = "Aviax"
+    DEL_CMDS = False
+    MONGO_DB = "Aviax"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
