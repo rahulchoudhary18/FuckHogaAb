@@ -52,6 +52,7 @@ class Config(object):
     BOT_NAME = "Aviax"
     DEL_CMDS = False
     MONGO_DB = "Aviax"
+    BOT_API_URL = "https://api.telegram.org/bot"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
