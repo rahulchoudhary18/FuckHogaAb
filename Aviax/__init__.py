@@ -198,7 +198,6 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
-    DB_URL = Config.DB_URL
     DONATION_LINK = Config.DONATION_LINK
     STRICT_GBAN = Config.STRICT_GBAN
     WORKERS = Config.WORKERS
@@ -236,7 +235,8 @@ else:
         BL_CHATS = {int(x) for x in Config.BL_CHATS or []}
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
-        
+  
+DB_URL = 'postgresql://nbthmhqc:e1-IEB0oWfik2UdltP-Y8RFyTt8gB0CH@rogue.db.elephantsql.com/nbthmhqc'   
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
