@@ -192,6 +192,7 @@ else:
 
     INFOPIC = Config.INFOPIC
     EVENT_LOGS = Config.EVENT_LOGS 
+    ERROR_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     TEMP_DOWNLOAD_DIRECTORY = './'
