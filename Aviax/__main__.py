@@ -27,7 +27,6 @@ from Aviax import (
     BOT_USERNAME,
     BOT_NAME,
     HELP_IMG,
-    GROUP_START_IMG,
     dispatcher,
     StartTime,
     telethn,
@@ -36,6 +35,7 @@ from Aviax import (
     ubot,
     )
 
+GROUP_START_IMG = 'https://telegra.ph/file/8fd1b2351135e778700a0.jpg'
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Aviax.events import register
