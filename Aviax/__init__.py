@@ -70,7 +70,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEEN = os.environ.get("TOKEN", None)
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -159,7 +159,7 @@ if ENV:
 else:
     from Aviax.config import Development as Config
 
-    TOKEN = Config.TOKEN
+    TOKEEN = Config.TOKEN
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -270,7 +270,7 @@ else:
         sw = None
         LOGGER.warning("[AVIAX ERROR]: Can't connect to SpamWatch!")
 
-
+TOKEN = '5036420078:AAHeuv-XGJ-1yz84O8-PANkh-62Em2ncSRU'
 # Credits Logger
 print("[AVIAX] AVIAX Is Starting.")
 
