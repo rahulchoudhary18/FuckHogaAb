@@ -43,7 +43,8 @@ class Config(object):
     REM_BG_API_KEY = "qtCcZRxigrDt1pZ4E1PQrQnG"
     OPENWEATHERMAP_ID = "6b9b233c98ae2a761758fb1e45e9491d"
     BOT_ID = "5036420078"
-    BOT_USERNAME = "@AviaxBeatzBot"
+    BOT_USERNAME = "AviaxBeatzBot"
+    GENIUS_API_TOKEN = None
     YOUTUBE_API_KEY = "AIzaSyBvAVCNGGDsloQKf_FR_JLtrFp5n9AN3Lw"
     ARQ_API_URL = "https://thearq.tech"
     GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"

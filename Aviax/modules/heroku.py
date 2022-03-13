@@ -32,9 +32,10 @@ import os
 import heroku3
 import requests
 
-from Aviax import telethn, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from Aviax import telethn, OWNER_ID
 from Aviax.events import register
-
+HEROKU_APP_NAME = None
+HEROKU_API_KEY = None
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 

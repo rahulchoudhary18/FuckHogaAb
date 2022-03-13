@@ -70,7 +70,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEEN = os.environ.get("TOKEN", None)
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -159,7 +159,7 @@ if ENV:
 else:
     from Aviax.config import Development as Config
 
-    TOKEN = Config.TOKEN
+    TOKEEN = Config.TOKEN
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -192,13 +192,14 @@ else:
 
     INFOPIC = Config.INFOPIC
     EVENT_LOGS = Config.EVENT_LOGS 
+    ERROR_LOGS = Config.EVENT_LOGS
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
+    TEMP_DOWNLOAD_DIRECTORY = './'
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
-    DB_URL = Config.DB_URL
     DONATION_LINK = Config.DONATION_LINK
     STRICT_GBAN = Config.STRICT_GBAN
     WORKERS = Config.WORKERS
@@ -206,6 +207,7 @@ else:
     NO_LOAD = Config.NO_LOAD
     CASH_API_KEY = Config.CASH_API_KEY
     TIME_API_KEY = Config.TIME_API_KEY
+    GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
     WALL_API = Config.WALL_API
     MONGO_DB_URL = Config.MONGO_DB_URL
     REDIS_URL = Config.REDIS_URL
@@ -236,7 +238,9 @@ else:
         BL_CHATS = {int(x) for x in Config.BL_CHATS or []}
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
-        
+  
+DB_URL = 'postgresql://nbthmhqc:e1-IEB0oWfik2UdltP-Y8RFyTt8gB0CH@rogue.db.elephantsql.com/nbthmhqc'   
+BAN_STICKER = True
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
@@ -270,7 +274,7 @@ else:
         sw = None
         LOGGER.warning("[AVIAX ERROR]: Can't connect to SpamWatch!")
 
-
+TOKEN = '5036420078:AAHeuv-XGJ-1yz84O8-PANkh-62Em2ncSRU'
 # Credits Logger
 print("[AVIAX] AVIAX Is Starting.")
 
@@ -279,7 +283,7 @@ print("[AVIAX]: Telegraph Installing")
 telegraph = Telegraph()
 print("[AVIAX]: Telegraph Account Creating")
 telegraph.create_account(short_name='Aviax')
-updater = tg.Updater(token=TOKEN, base_url=BOT_API_URL, workers=WORKERS, request_kwargs={"read_timeout": 10, "connect_timeout": 10}, use_context=True)           
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 print("[AVIAX]: TELETHON CLIENT STARTING")
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
