@@ -207,6 +207,7 @@ else:
     NO_LOAD = Config.NO_LOAD
     CASH_API_KEY = Config.CASH_API_KEY
     TIME_API_KEY = Config.TIME_API_KEY
+    GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
     WALL_API = Config.WALL_API
     MONGO_DB_URL = Config.MONGO_DB_URL
     REDIS_URL = Config.REDIS_URL
