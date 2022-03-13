@@ -194,7 +194,7 @@ else:
     EVENT_LOGS = Config.EVENT_LOGS 
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
-    TEMP_DOWNLOAD_DIRECTORY = '/downloads'
+    TEMP_DOWNLOAD_DIRECTORY = './'
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
