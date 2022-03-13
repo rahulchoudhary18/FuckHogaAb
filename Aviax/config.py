@@ -28,7 +28,7 @@ class Config(object):
     )  # Prints info rmation like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    DB_URL = "postgresql://nbthmhqc:e1-IEB0oWfik2UdltP-Y8RFyTt8gB0CH@rogue.db.elephantsql.com/nbthmhqc"  # needed for any database modules # its "URI" and not "URL" as heroku and similar ones only accept it as such
+    DB_URL = "postgresql://jdzcyyju:7tHwBXlUlK9UCKAtsgVxA5d9aGUzar9g@arjuna.db.elephantsql.com/jdzcyyju"  # needed for any database modules # its "URI" and not "URL" as heroku and similar ones only accept it as such
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
