@@ -71,7 +71,7 @@ async def awake(event):
   AVIAX = event.sender.first_name
   AVIAX = ("**♡ I,m Aviax 愛** \n\n" +
               "**♡ I'm Working With Awesome Speed**\n\n")
-  AVIAX += "**♡ Cutiepii: LATEST Version**\n\n"
+  AVIAX += "**♡ Aviax__: LATEST Version**\n\n"
   AVIAX += "**♡ My Creator:** [ThePhenomenal](t.me/RahulChoudhary17)\n\n"
   AVIAX += "**♡ python-Telegram-Bot: 13.7**\n\n"
   AVIAX_BUTTON = [
@@ -417,7 +417,7 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-def cutiepii_callback_data(update, context):
+def aviax_callback_data(update, context):
     query = update.callback_query
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "aviax_":
@@ -711,7 +711,7 @@ def main():
   settings_handler = DisableAbleCommandHandler("settings", get_settings)
   settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_", run_async=True)
 
-  data_callback_handler = CallbackQueryHandler(cutiepii_callback_data, pattern=r"cutiepii_", run_async=True)
+  data_callback_handler = CallbackQueryHandler(aviax_callback_data, pattern=r"aviax_", run_async=True)
   donate_handler = DisableAbleCommandHandler("donate", donate, run_async=True)
   migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats, run_async=True)
 
@@ -737,7 +737,7 @@ def main():
           updater.bot.set_webhook(url=URL + TOKEN)
 
   else:
-      LOGGER.info(f"Cutiepii started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
+      LOGGER.info(f"Aviax started, Using long polling. | BOT: [@{dispatcher.bot.username}]")
       updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True, allowed_updates=Update.ALL_TYPES)
 
   if len(argv) in {1, 3, 4}:
