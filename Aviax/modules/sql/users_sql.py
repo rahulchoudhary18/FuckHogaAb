@@ -165,7 +165,6 @@ def get_user_num_chats(user_id):
         SESSION.close()
 
 
-ensure_bot_in_db()
 
 def get_user_com_chats(user_id):
     try:
