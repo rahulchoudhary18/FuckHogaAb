@@ -36,7 +36,7 @@ from Aviax.events import register as cutiepii
 
 
 
-@cutiepii(pattern="^/tagall ?(.*)")
+@cutiepii(pattern="^/utag ?(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -49,9 +49,9 @@ async def _(event):
 
 __mod_name__ = "Tagger"
 __help__ = """
-  ➢ `/tagall` : Tag everyone in a chat.
-  ➢ `/tagall` : Mention All Members
+  ➢ `/utag` : Tag everyone in a chat.
+  ➢ `/utag` : Mention All Members
 Exp:- /all <Text> or <reply>
 
-Note:- This `/tagall` Command can mention members upto 10,000 in groups and can mention members upto 200 in channels !
+Note:- This `/utag` Command can mention members upto 10,000 in groups and can mention members upto 200 in channels !
 """
