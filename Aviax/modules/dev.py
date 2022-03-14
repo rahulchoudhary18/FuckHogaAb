@@ -62,13 +62,13 @@ def leave_cb(update: Update, context: CallbackContext):
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        state = "off" if Cutiepii_Robot.ALLOW_CHATS else "Lockdown is " + "on"
+        state = "off" if Aviax.ALLOW_CHATS else "Lockdown is " + "on"
         update.effective_message.reply_text(f"Current state: {state}")
         return
     if args[0].lower() in ["off", "no"]:
-        Cutiepii_Robot.ALLOW_CHATS = True
+        Aviax.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        Cutiepii_Robot.ALLOW_CHATS = False
+        Aviax.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
@@ -116,7 +116,7 @@ telethn.add_event_handler(callback_queries, events.CallbackQuery())
 @telethn.on(events.NewMessage(pattern=r"/getstats", from_users=OWNER_ID))
 async def getstats(event):
     await event.reply(
-        f"**__CUTIEPII EVENT STATISTICS__**\n**Average messages:** {messages.average()}/s\n**Average Callback Queries:** {callback_queries.average()}/s\n**Average Inline Queries:** {inline_queries.average()}/s",
+        f"**__AVIAX EVENT STATISTICS__**\n**Average messages:** {messages.average()}/s\n**Average Callback Queries:** {callback_queries.average()}/s\n**Average Inline Queries:** {inline_queries.average()}/s",
         parse_mode='md'
     )
 	
