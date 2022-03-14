@@ -343,8 +343,8 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
         disaster_level_present = True
-    elif user.id == 1482952149:
-         text += "\n\nCo-Owner Of A Bot. Queen Of @Awesome_RJ. Bot Name Inspired From 'Rabeeka'."
+    elif user.id == 2141987355:
+         text += "\n\nCo-Owner Of A Bot. Queen Of @RahulChoudhary17."
          disaster_level_present = True
 
     if disaster_level_present:
@@ -474,8 +474,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Black_Knights_Union)\n\n"
-            + "╘══「 by [Awesome RJ](https://github.com/Awesome-RJ) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/AviaxOfficial)\n\n"
+            + "╘══「 by [𝑨𝑻 𝑾𝑶𝑹𝑳𝑫'𝑺 𝑬𝑵𝑫 🇮🇳](https://t.me/RahulChoudhary17) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -487,9 +487,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Black_Knights_Union)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/AviaxOfficial)\n\n"
                 )
-                + "╘══「 by [Awesome-RJ](https://github.com/Awesome-RJ) 」\n"
+                + "╘══「 by [𝑨𝑻 𝑾𝑶𝑹𝑳𝑫'𝑺 𝑬𝑵𝑫 🇮🇳](https://t.me/RahulChoudhary17) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
