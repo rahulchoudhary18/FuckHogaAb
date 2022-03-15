@@ -139,7 +139,7 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/CrazyLovers_xD"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/+Xfx7pJMpS542NzFl"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
