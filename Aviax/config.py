@@ -35,7 +35,7 @@ class Config(object):
     INFOPIC = True
     URL = None
     STRICT_GBAN = False
-    MONGO_DB_URL = "mongodb+srv://sofia:sofia@cluster0.axmal.mongodb.net/sofia?retryWrites=true&w=majority"
+    MONGO_DB_URL = "mongodb+srv://userbot:userbot@cluster0.ooedq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     REDIS_URL = "redis://ItzWorldsEnd_Xo:Papasepooch_1@redis-18861.c91.us-east-1-3.ec2.cloud.redislabs.com:18861/ItzWorldsEnd_Xo"
     
     SPAMWATCH_SUPPORT_CHAT = "@AviaxSupport"
