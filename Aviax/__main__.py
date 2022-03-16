@@ -149,7 +149,15 @@ buttons = [
                        InlineKeyboardButton(
                              text="📢 Updates",
                              url="https://t.me/AviaxOfficial")
-                     ], 
+                     ],
+                    [                  
+                       InlineKeyboardButton(
+                             text="► Assistant ◄",
+                             url=f"https://t.me/AviaxOfficial/4"),
+                       InlineKeyboardButton(
+                             text="► Music Help ◄",
+                             url="https://t.me/AviaxOfficial/5")
+                     ],
     ]
 
                     
