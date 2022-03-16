@@ -239,7 +239,7 @@ else:
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
   
-DB_URL = 'postgresql://nbthmhqc:e1-IEB0oWfik2UdltP-Y8RFyTt8gB0CH@rogue.db.elephantsql.com/nbthmhqc'   
+DB_URL = 'postgresql://razcpdlc:HKwkMuLQAopiJcHQ36C2PGdQoG73gFOE@jelani.db.elephantsql.com/razcpdlc'   
 BAN_STICKER = True
 
 DRAGONS.add(OWNER_ID)
@@ -274,7 +274,7 @@ else:
         sw = None
         LOGGER.warning("[AVIAX ERROR]: Can't connect to SpamWatch!")
 
-TOKEN = '5036420078:AAHeuv-XGJ-1yz84O8-PANkh-62Em2ncSRU'
+TOKEN = '5060064564:AAEwhDnuO838fRT2WCdbUTBT4w-y1DAK6ck'
 # Credits Logger
 print("[AVIAX] AVIAX Is Starting.")
 
