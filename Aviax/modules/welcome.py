@@ -241,7 +241,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the Iron Blood just joined!",
+                    "Whoa! Aviax Owner just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -284,7 +284,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                                     text="🚑 Support", url=f"https://t.me/{SUPPORT_CHAT}"
                                 ),
                                 InlineKeyboardButton(
-                                    text="📢 Updates", url="https://t.me/Black_Knights_Union"
+                                    text="📢 Updates", url="https://t.me/AviaxOfficial"
                                 ),
                             ]
                         ],
