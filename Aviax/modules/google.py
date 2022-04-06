@@ -89,7 +89,7 @@ async def _(event):
         print(e)
         await event.reply("I can't find that")
 
-@register(pattern="^/google (.*)")
+@register(pattern="^/gs (.*)")
 async def _(event):
     if event.fwd_from:
         return
