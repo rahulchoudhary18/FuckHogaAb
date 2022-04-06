@@ -50,7 +50,7 @@ from telethon import *
 from telethon.tl.types import *
 
 
-from Aviax import telethon, BOT_NAME
+from Aviax import telethn, BOT_NAME
 from Aviax.events import register
 
 @register(pattern="^/gps (.*)")
@@ -75,7 +75,7 @@ async def _(event):
         longitude = geoloc.longitude
         latitude = geoloc.latitude
         gm = "https://www.google.com/maps/search/{},{}".format(latitude, longitude)
-        await telethon.send_file(
+        await telethn.send_file(
             event.chat_id,
             file=types.InputMediaGeoPoint(
                 types.InputGeoPoint(float(latitude), float(longitude))
@@ -139,7 +139,7 @@ async def img_sampler(event):
     files_grabbed = []
     for files in types:
         files_grabbed.extend(glob.glob(files))
-    await telethon.send_file(event.chat_id, files_grabbed, reply_to=event.id)
+    await telethn.send_file(event.chat_id, files_grabbed, reply_to=event.id)
     os.chdir("/app")
     os.system("rm -rf store")
 
@@ -352,7 +352,7 @@ size=200x200&charset-source=UTF-8&charset-target=UTF-8\
     with open(required_file_name, "w+b") as file:
         for chunk in resp.iter_content(chunk_size=128):
             file.write(chunk)
-    await qrcode.telethon.send_file(
+    await qrcode.telethn.send_file(
         qrcode.chat_id,
         required_file_name,
         reply_to=reply_msg_id,
