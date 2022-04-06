@@ -50,7 +50,7 @@ from telethon import *
 from telethon.tl.types import *
 
 
-from Aviax import telethn, BOT_NAME
+from Aviax import telethon, BOT_NAME
 from Aviax.events import register
 
 @register(pattern="^/gps (.*)")
@@ -75,7 +75,7 @@ async def _(event):
         longitude = geoloc.longitude
         latitude = geoloc.latitude
         gm = "https://www.google.com/maps/search/{},{}".format(latitude, longitude)
-        await telethn.send_file(
+        await telethon.send_file(
             event.chat_id,
             file=types.InputMediaGeoPoint(
                 types.InputGeoPoint(float(latitude), float(longitude))
@@ -139,7 +139,7 @@ async def img_sampler(event):
     files_grabbed = []
     for files in types:
         files_grabbed.extend(glob.glob(files))
-    await telethn.send_file(event.chat_id, files_grabbed, reply_to=event.id)
+    await telethon.send_file(event.chat_id, files_grabbed, reply_to=event.id)
     os.chdir("/app")
     os.system("rm -rf store")
 
@@ -352,7 +352,7 @@ size=200x200&charset-source=UTF-8&charset-target=UTF-8\
     with open(required_file_name, "w+b") as file:
         for chunk in resp.iter_content(chunk_size=128):
             file.write(chunk)
-    await qrcode.telethn.send_file(
+    await qrcode.telethon.send_file(
         qrcode.chat_id,
         required_file_name,
         reply_to=reply_msg_id,
@@ -366,7 +366,7 @@ size=200x200&charset-source=UTF-8&charset-target=UTF-8\
 __mod_name__ = "Google"
 
 __help__ = """
-  ➢ `/google <text>` :- Perform a google search
+  ➢ `/gs <text>` :- Perform a google search
   ➢ `/img <text>` :- Search Google for images and returns them\nFor greater no. of results specify lim, For eg: `/img hello lim=10`
   ➢ `/app <appname>` :- Searches for an app in Play Store and returns its details.
   ➢ `/reverse` :- reply to a sticker, or an image to search it!
