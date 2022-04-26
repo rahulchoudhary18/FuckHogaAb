@@ -84,7 +84,7 @@ geopy
 humanize
 heroku3
 beautifulsoup4
-pyrogram
+pyrogram==1.4.12
 yt-dlp
 python-arq
 aiohttp
