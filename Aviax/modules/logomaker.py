@@ -302,7 +302,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y = ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
-    fname = " Aviax.png"
+    fname = " Aviax1.png"
     img.save(fname, "png")
     await telethn.send_file(event.chat_id, file=fname, caption = f"Made by @{BOT_USERNAME}")         
     await pesan.delete()
