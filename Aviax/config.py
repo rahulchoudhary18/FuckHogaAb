@@ -58,7 +58,7 @@ class Config(object):
     AVIAX_PHOTO = "https://telegra.ph/file/d05a3ce6f08404cd88361.jpg"
     APP_ID = 2984107
     APP_HASH = "4ce83ad7d954da391c659c6d7d76e0ce"
-    STRING_SESSION = "1AZWarzgBu6IKHJFzN3dKo_usGXY5Dy2aPY8AQKL2yaqivl7ynMjdzhSTXCGUFEIJAvJF0GOZr5HYKZ7S_t-8nU9mUzgXK_SC3Sxdm5jV3TTigUXS4Qx3OVdfKKTADn0qtldCkMhZ4vhTLIcV3eKcYKMWobxy_6zMFP5jp4tzf1CDJuR1xoKFfZptGk03exuS5-A-B8lwZ_110_ztgE1QNW5Nuw_DcFzK6wCIJujm8BPCbKsu4uvdSdYaHIGYMdT3rEbXrwe_d4A_nLTFLpCvMQpbSbY-UnJLBM9XWMFqfkY3RP8rMcPxEktZ2FJabaizmteaMpjT_ep8e8TvYGbFi_JYseUG-UE="
+    STRING_SESSION = "1AZWarzkBu0Sm3q2FAyFAIiwVoVW9Qz12K2-n-F54UTiqs2zML4w1RghJ98xRGcs92JLWjOM8xcgw0CaupOCyP93gYcZJDjzGIrRDN84x1huJ2jUOKQZb9wpTe2tWpoVb-XF0d0JWPMuX3LNUD0UPr4QYOalNkJ1iNxwZ3exSCoqKMsNMwBk-Ulr5vSvkoVMfzGA2jSBKiTJJAclxL4aSv0tuEbA_0rNkW7uIYOkBi91ihPaLxDIiRa7rncL6I4oo5UoBTMhnHtyi-TjCkAcCum2rP5uNuJ5ahGOt7LgeNs_hPTQlZd4InZoAiuC3S97XuiImYZZ6GwhNlVYF92Nw7G9d9Dzi8yY="
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
