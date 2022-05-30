@@ -239,7 +239,7 @@ else:
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
   
-DB_URL = 'postgres://razcpdlc:HKwkMuLQAopiJcHQ36C2PGdQoG73gFOE@jelani.db.elephantsql.com/razcpdlc'   
+DB_URL = 'postgresql://razcpdlc:HKwkMuLQAopiJcHQ36C2PGdQoG73gFOE@jelani.db.elephantsql.com/razcpdlc'   
 BAN_STICKER = True
 
 DRAGONS.add(OWNER_ID)
