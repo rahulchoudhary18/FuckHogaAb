@@ -36,7 +36,7 @@ class Config(object):
     URL = None
     STRICT_GBAN = False
     MONGO_DB_URL = "mongodb+srv://userbot:userbot@cluster0.ooedq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-    REDIS_URL = "redis://ItzWorldsEnd_Xo:Papasepooch_1@redis-18861.c91.us-east-1-3.ec2.cloud.redislabs.com:18861/ItzWorldsEnd_Xo"
+    REDIS_URL = "redis://AviaxRedisOp:Rahulrahul11111_@redis-18183.c10.us-east-1-4.ec2.cloud.redislabs.com:18183/AviaxRedisOp"
     
     SPAMWATCH_SUPPORT_CHAT = "@AviaxSupport"
     SPAMWATCH_API = "xpKDzGXxXksbRFYrQGKH3445Ex0fEMegtptlwXTIMoKXuZ2NpZZt1aLQji8kgeEm"
